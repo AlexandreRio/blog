@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>{{ page.title }}</title>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32307801-1']);
+      _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </head>
+  <body>
+    <aside>
+      ![alt text, photo](assets/me.jpeg)
+      <img class="photo" alt="photo" src="img/me.jpeg"/><p>Alexandre Rio, étudiant en Informatique</p><br />
+      <p>Je <a href="https://twitter.com/Rio_Alexandre">tweet</a>, je <a href="https://github.com/AlexandreRio">code
+      </a> et je tiens un <a href="blog/">blog</a>; si vous voulez en savoir plus sur mon
+      <a href="http://fr.viadeo.com/fr/profile/alexandre.rio4">parcours pro'.</a> </p>
+      <p>Vous pouvez aussi me contacter à cette adresse en utilisant cette clé <a href="pubkey.asc">gpg</a> ID: 0xCDFA4F91 :</p>
+      <p><img alt="email address" src="img/mail.png"/></p>
+    </aside>
+    {{ content }}
+  </body>
+</html>
