@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Un peu d'humour de geek?</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Un peu d'humour de geek?</h2>
+<p class="meta">01 May 2011</p>
+
+<div class="post">
+Bien le bonjour!
+
+Aujourd'hui je vous propose un Shellscript Bash pour afficher des blagues de geek. o/
+
+En fait ceux sont les mêmes blagues qui s'affichent en haut à droite de ce blog ( d'ailleurs certaines ont encore des problèmes d'encodage mais j'y travaille).
+
+Pour exécuter ce code il faut la librairie zenity, installée par défaut sous Ubuntu, qui permet d'afficher des boites de dialogue GTK+,  s'il n'est pas présent sur votre machine un <em>sudo apt-get install zenity</em> devrait suffire.
+
+Le script est donc disponible <em><a href="http://orbital-project.kegtux.org/programmes/bdg.sh">ici</a></em> ou via la commande:
+
+[bash]cd $HOME/Bureau &amp;&amp; wget http://orbital-project.kegtux.org/programmes/bdg.sh &amp;&amp; chmod +x bdg.sh &amp;&amp; ./bdg.sh[/bash]
+
+
+
+Et pour ceux qui ont la flemme de le télécharger voilà le code source:
+
+[bash]#!/bin/bash
+#                               Script d'affichage de blague de geek
+#                                   Necessite le paquet zenity
+#################################################################################################
+#                           Par Orbital: http://orbital-project.kegtux.org/blog/
+#                               http://twitter.com/Rio_Alexandre
+#################################################################################################
+
+Cache=&quot;$HOME/.bdg_cache&quot;
+let &quot;continuer=1&quot;
+if [ ! -d $Cache ]
+then
+ mkdir $Cache
+fi
+chmod 777 $Cache
+cd $Cache
+while [ $continuer -eq 1 ]
+do
+ rm *.php
+ wget http://orbital-project.kegtux.org/programmes/list.php
+
+ zenity --info --text=&quot;`cat list.php`&quot; --title=&quot;Blague de geek&quot; --width=200 --height=150
+ zenity --question --ok-label=&quot;une autre!&quot; --cancel-label=&quot;Quitter&quot; --text=&quot;Continuer ?&quot;
+ if [ $? -eq 0 ]
+ then
+ let &quot;continuer = 1&quot;
+ else
+ let &quot;continuer = 0&quot;
+ fi
+
+done[/bash]
+
+Le script créera le dossier .bdg_cache pour stocker la blague à afficher, le dossier est caché et est vidé à chaque exécution donc il devrait pas trop gêner.
+
+Et voilà le rendu:
+
+<a href="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/script_bdg.png"><img class="aligncenter size-full wp-image-156" title="script_bdg" src="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/script_bdg.png" alt="" width="420" height="210" /></a>Quand j'aurais le temps je verrai pour rajouter des couleurs au titre, à l'auteur et à la date.
+
+En espérant qu'elles vous feront rire. ++
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

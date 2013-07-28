@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Pseudo hack de Samsung p250</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Pseudo hack de Samsung p250</h2>
+<p class="meta">28 Mar 2011</p>
+
+<div class="post">
+Aujourd'hui on va hacker mon portable!
+
+On va utiliser un code qui permet d'accéder à une sorte de menu système qui va permettre de connaitre pleins de truc cool et de modifier 2, 3 choses au passage. :D
+
+Pour commencer on va rentrer ce code comme si on allait appeler quelqu'un:
+<blockquote>*#0206*8378#</blockquote>
+Les chiffres 837 et 8 apparaitront comme ceci: _ et le # final validera le code. Vous devriez vous trouvez dans ce menu:
+<p style="text-align: center;"><a href="http://alexrio.fr/blog/wp-content/uploads/2011/03/hack_samsung.png"><img class="aligncenter size-full wp-image-119" title="hack_samsung" src="http://alexrio.fr/blog/wp-content/uploads/2011/03/hack_samsung.png" alt="" width="148" height="210" /></a>Alors rapide tour d'horizon des menus (il y a beaucoup de fonctions dont je ne comprends pas l'utilité ):</p>
+
+<ol>
+	<li>Version -&gt; Permet de connaitre: les library disponibles et le TFS Checksum ( utile si on veut changer le firmware).</li>
+	<li>H/W test -&gt; La partie la plus utile à mes yeux, en allant dans le sous-menu Audio Settings/MP3 spk/Rx vol. puis en modifiant la valeur du Level 14( le dernier) pour y mettre disons 5000 au lieu de 3000 on obtient un volume sonore bien plus fort au maximum lors de l'écoute d'un .mp3 ( restez raisonnable, une trop haute valeur donnera un son trop saturé). Dans le sous-menu Vib test on peut tester le vibreur...</li>
+	<li>Lock state, ben la aucune idée, chez moi il affiche 2 octets, un à 0 et l'autre à 1.</li>
+	<li>SIM info. -&gt; beaucoup de sous-menu que je ne comprends pas, mais sinon ça permet de connaitre l'état de la mémoire pour les contacts du répertoire et pour les SMS stockés en SIM.</li>
+	<li>Production -&gt; permet de savoir la date de fabrication du téléphone entre autre.</li>
+	<li>Text message -&gt; permet de remplir la boite de messagerie d'auto-messages, un peu useless quand même...</li>
+	<li>SAT TEST aucune idée pour le moment ( j'ai pas vraiment cherché pour le moment xD ).</li>
+	<li>Band selection -&gt; doit permettre de gérer le réseau, j'en sais pas plus.</li>
+</ol>
+Cette manip' doit marcher sur d'autre modèle, peut-être chez d'autre constructeur, mais j'ai pas eu l'occasion de le tester.
+
+Si vous avez plus d'info' sur ce hack ou sur le hacking de portable en général hésitez pas à laisser un commentaire. ;)
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

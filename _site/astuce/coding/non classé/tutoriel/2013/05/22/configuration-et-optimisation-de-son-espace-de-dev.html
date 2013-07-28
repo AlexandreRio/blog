@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Configuration et optimisation de son espace de dév'</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Configuration et optimisation de son espace de dév'</h2>
+<p class="meta">22 May 2013</p>
+
+<div class="post">
+Quand je bosse dans un lieu public on me demande souvent ce que j'utilise comme distribution, comme Desktop Environment ou encore comme éditeur de texte / IDE.
+Parce que oui ça ressemble pas à la dernière version d'Ubuntu avec Gnome Unity, pour la simple et bonne raison que je les trouve peu ergonomique et peu configurable.
+
+J'ai longtemps utilisé un laptop avec un écran de 15,4" suffisamment grand pour être confortable mais pas trop pour rester facilement transportable, j'ai toujours eu du mal avec les laptops 17"…
+Depuis quelques mois je suis passé à un EliteBook 2570p, vraiment parfait pour coder en déplacement : très léger, très compact, autonomie de 3 à 4 heures avec la batterie «double». Je ne vais pas faire une critique de l'ordinateur portable, juste qu'avec un écran de 12,5" les barres d'états / de menus / d'outils occupent très vite une part importante de l'écran.
+<h1>Environnement de bureau</h1>
+J'ai longtemps utilisé Gnome 2 puis quand est sortit Gnome 3 «Gnome Shell» je suis passé à <a title="OpenBox" href="http://openbox.org/" target="_blank">OpenBox</a> avec un thème Darksun et tint2 pour la barre de taches. J'utilise <a title="Conky" href="http://conky.sourceforge.net/" target="_blank">Conky</a> pour le monitoring. J'ai flouté un flux RSS.
+Au passage, si vous avez un problème de transparence sur les icônes de taches de <a title="Tint2" href="http://code.google.com/p/tint2/" target="_blank">tint2</a> regardez du côté des paramètres de Compositor ou du Compositing.
+
+<a href="http://alexrio.fr/blog/wp-content/uploads/2013/05/desktop.png"><img class="aligncenter size-large wp-image-447" alt="desktop" src="http://alexrio.fr/blog/wp-content/uploads/2013/05/desktop-1024x575.png" width="625" height="350" /></a>
+<h1>Optimisation</h1>
+Après avoir optimisé l'espace de travail il reste à optimiser les outils de développement. De manière générale l'objectif est de pouvoir tout contrôler depuis le clavier, devoir lâcher le clavier pour prendre la souris faisant perdre du temps.
+
+Pour optimiser la frappe je suis passé à la disposition <a title="Bépo" href="http://bepo.fr/wiki/Accueil" target="_blank">bépo</a> depuis maintenant presque un an.
+<h2>Le terminal</h2>
+Pour développer je fais presque tout avec <a title="Vim" href="http://www.vim.org/" target="_blank">Vim</a>, avec les plugins:
+• <a title="Vim_getset" href="http://www.vim.org/scripts/script.php?script_id=490" target="_blank">java_getset</a> : ajout de getter / setter pour les attributs d'une classe Java
+• <a title="Vim_nerdtree" href="http://www.vim.org/scripts/script.php?script_id=1658" target="_blank">nerdtree</a> : pour faciliter la navigation dans les dossiers depuis Vim
+• <a title="Vim_tabular" href="https://github.com/godlygeek/tabular" target="_blank">tabular</a> : pour des lignes en fonctions d'un pattern, le = par exemple
+• <a title="Vim_vaxe" href="https://github.com/jdonaldson/vaxe" target="_blank">vaxe</a> : pour le support du langage Haxe
+• <a title="Vim_powerline" href="https://github.com/Lokaltog/powerline" target="_blank">powerline</a> : pour faciliter la gestion des buffers
+• <a title="Eclim" href="http://eclim.org/" target="_blank">eclim</a> : pour intégrer les fonctions d'eclipse à vim, je commence juste à m'en servir
+• et bien sur <a title="Vim_pathogen" href="https://github.com/tpope/vim-pathogen" target="_blank">pathogen</a> pour gérer l'installation des plugins
+
+<a href="http://alexrio.fr/blog/wp-content/uploads/2013/05/vim.png"><img class="aligncenter size-large wp-image-450" alt="vim" src="http://alexrio.fr/blog/wp-content/uploads/2013/05/vim-1024x538.png" width="625" height="328" /></a>
+
+Au lieu de devoir lancer plusieurs terminaux j'utilise le multiplexer <a title="tmux" href="http://tmux.sourceforge.net/" target="_blank">tmux</a>.
+Dans la status bar de tmux l'état de mes boites mails et une horloge, comme ça même en fullscreen tout est disponible.<a href="http://alexrio.fr/blog/wp-content/uploads/2013/05/tmux.png"><img class="aligncenter size-large wp-image-474" alt="tmux" src="http://alexrio.fr/blog/wp-content/uploads/2013/05/tmux-1024x575.png" width="625" height="350" /></a>
+J'utilise 2 sessions avec tmux, la première est celle qui apparait à l'ouverture du terminal, elle est vide. La seconde contient 3 onglets avec une instance de mutt dans chaque.
+
+Les emails sont récupérés en IMAP avec <a title="offlineimap" href="http://offlineimap.org/" target="_blank">offlineimap</a>, les mots de passe sont stockés par gnome-keyring, allez voir l'article de <a title="Gnome_keyring" href="http://jason.the-graham.com/2011/01/16/gnome_keyring_with_msmtp_imapfilter_offlineimap/" target="_blank">Jason</a> si vous voulez automatiser dans une cron.
+
+J'utilise aussi le client <a title="TTYtter" href="http://www.floodgap.com/software/ttytter/">TTYtter</a> ( j'y reviendrai plus tard ).
+<h2>Le navigateur</h2>
+J'utilise Firefox, sur le canal stable, je suis pas développeur donc pas besoin du support des dernières fonctions avant qu'elles sortent.
+
+<a href="http://alexrio.fr/blog/wp-content/uploads/2013/05/firefox.png"><img class="aligncenter size-large wp-image-448" alt="firefox" src="http://alexrio.fr/blog/wp-content/uploads/2013/05/firefox-1024x847.png" width="625" height="516" /></a>
+
+Le plugin le plus important que j'utilise est clairement Pentadactyl, il permet d'utiliser Firefox avec les mêmes raccourcis claviers que Vim, puisque tout se fait au clavier tous les menus et barres peuvent être désactivés pour gagner encore plus d'espace.
+J'ai modifié le hint-mode, qui permet de «cliquer» sur les liens d'une page à l'aide du clavier, pour le rendre plus ergonomique. Les lettres proposées correspondent à la partie gauche d'un clavier bépo, le hint-mode se déclenchant avec la touche f, située à droite du clavier. Le style css des propositions correspond peu ou prou à celui du plugin chrome Vimium qu'un ami utilisait et qui est bien plus lisible.
+
+J'ai rebindé quelque commande, soit pour s'adapter à un mapping bépo soit pour gagner du temps, pour la commande :downloads par exemple.
+
+Un des points fort de pentadactyl est de pouvoir lancer des commandes du système, ça ne remplace pas du tout un shell mais peut s'avérer utile dans certains cas, comme par exemple appeler le client ttytter, on peut imaginer le cas suivant :
+Touche . pour passer en mode commande, et la commande :twitter Hello world !
+Pouvoir tweeter en si peu de keystroke et sans changer de page ça c'est de l'optimisation !
+<h1>Ce qu'il me reste à faire / améliorer</h1>
+<blockquote class="twitter-tweet" lang="xx-lc">Aujourd'hui je passe à offlineIMAP et mutt pour lire mes mails o/ <a href="https://twitter.com/search/%23FullCLI">#FullCLI</a>
+
+— Alexandre Rio (@Rio_Alexandre) <a href="https://twitter.com/Rio_Alexandre/status/335373857349308418">May 17, 2013</a></blockquote>
+<script charset="utf-8" type="text/javascript" src="//platform.twitter.com/widgets.js" async=""></script>
+
+<blockquote class="twitter-tweet" lang="xx-lc">Oui parce que parfois <a href="https://twitter.com/search/%23Thunderbird">#Thunderbird</a> me bouffe 100% d'un core, met 10min a récupérer un mail de 2 lignes de texte. <a href="https://twitter.com/search/%23TweetPrécédent">#TweetPrécédent</a> — Alexandre Rio (@Rio_Alexandre) <a href="https://twitter.com/Rio_Alexandre/status/335374647610732544">May 17, 2013</a></blockquote>
+
+<script charset="utf-8" type="text/javascript" src="//platform.twitter.com/widgets.js" async=""></script>
+Ça fait peu de temps que j'essaie de remplacer Thunderbird, il me reste encore à configurer mes filtres et la partie SMTP.
+
+Ça fait pas mal de temps que j'utilise Conky mais je trouve que j'en ai de moins en moins l'utilité, à l'avenir je pense le simplifier drastiquement pour avoir un bureau plus épuré, et puis niveau couleur c'est pas trop ça…
+<h1>Conclusion</h1>
+Bien que certains aspects soient un peu «gadget» ma conf' me permet de gagner un temps considérable par rapport à une distrib' «classique».
+N'hésitez pas à laisser un commentaire pour me faire part de vos remarques, questions ou suggestions ou si vous voulez que je rajoute un fichier de conf, j'ai inséré les plus importants et les plus modifiés.
+<h2>Les articles dont je me suis très largement inspiré</h2>
+• <a title="paulrouget" href="http://paulrouget.com/e/myconf/" target="_blank">Paul Rouget</a> pour son thème vim et thème de bureau ainsi que pour l'idée de faire ce genre d'article.
+
+• <a title="jasons_blog_mutt" href="http://jason.the-graham.com/2011/01/10/email_with_mutt_offlineimap_imapfilter_msmtp_archivemail/" target="_blank">Jason's Blog</a> pour la partie gestion des emails.
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

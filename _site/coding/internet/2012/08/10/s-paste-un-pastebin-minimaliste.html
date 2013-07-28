@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>S-Paste un pastebin minimaliste</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>S-Paste un pastebin minimaliste</h2>
+<p class="meta">10 Aug 2012</p>
+
+<div class="post">
+Bonjour à tous et toutes !
+
+Vous connaissez surement le principe des pastebin, vous uploadez le contenu d'un fichier sur un serveur, il génère un lien unique pour que vous puissiez le partager.
+
+Seulement beaucoup d'aspects peuvent être gênants:
+<ul>
+	<li>Malgré les "programmes tiers" il est pas toujours intuitif ni rapide d'uploader un fichier</li>
+	<li>Puisque les sites sont publics et très sollicités, les liens générés doivent être longs pour rester uniques</li>
+	<li>Même si ce que l'on poste est généralement public on a pas forcement envie de se faire indexer par les robots</li>
+	<li>On peut pas être sur de l'utilisation qui est faite des données (code proprio)</li>
+	<li>Surement encore plein d'autres raisons auxquelles j'ai pas pensé…</li>
+</ul>
+C'est donc dans cette optique que j'ai écrit 'Simple Paste' ( abrégé s-paste ). Un script en ligne de commande côté client qu'on appelle en spécifiant le fichier souhaité, côté serveur ça se contente de créer un fichier avec le contenu envoyé
+
+Puisque ça tourne sur son serveur perso pas besoin de générer des noms de fichier très long, je suis parti sur 5 caractères avec alphabet minuscule et chiffres (36^5 = 60 466 176 fichiers théoriques) mais 4 pourraient très bien faire l'affaire.
+
+Voilà le code du client :
+<h2 style="text-align: center;"><span style="text-decoration: underline;">/!\ Le code n'est pas du tout à jour, visitez le github ! /!\</span></h2>
+<h2 style="text-align: center;"><a href="https://github.com/AlexandreRio/s-paste">https://github.com/AlexandreRio/s-paste</a></h2>
+[bash]#!/bin/bash
+#
+# Minimalistic pastebin tool, uploads file and return a link.
+# The server part can be found here:
+# https://github.com/AlexandreRio/s-paste
+#
+# /!\ Don't forget to edit the url /!\
+#############################################################
+#         By Alexandre Rio / Orbital
+# http://alexrio.fr/    https://twitter.com/Rio_Alexandre
+#############################################################
+#
+#    See LICENSE file for copyright and license details
+#
+#############################################################
+
+help=&quot;Usage: \n- ./spaste [you can write an URL here]\n- ./riopaste -f
+file/path/here&quot;
+url=&quot;alexrio.fr/p/&quot;
+
+if [ $# -eq 2 ] &amp;&amp; [ $1 = '-f' ]
+then
+    curl -d &quot;data=`cat $2`&quot; $url
+elif [ $# -eq 1 ] &amp;&amp; [ $1 = '--help' ]
+then
+    echo -e $help
+elif [ $# -eq 1 ]
+then
+    curl -d &quot;data=$1&quot; $url
+else
+    echo -e $help
+fi[/bash]
+
+Et le code serveur :
+
+[php]&lt;?php
+if(!empty($_POST))
+{
+$url = 'http://alexrio.fr/p/'; // Your server location
+$size = 5; // Lenqht of the name of the file
+do {$chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+for($i=0; $i&lt;$size; $i++)
+{
+$fileName .= $chars[rand()%strlen($chars)];
+}
+}
+while(file_exists($fileName));
+
+$file = fopen($fileName,'a+'); // Don't forget to check the permission
+fputs($file,$_POST[&quot;data&quot;]);
+fclose($file);
+
+$number = sizeof(glob(&quot;*&quot;)) - 1; // Count the number of file less the php file.
+print &quot;Number of files: $number\nYour link:\n$url$fileName\n&quot;;
+}
+else {
+print 'This page only accept POST method.';
+}
+?&gt;[/php]
+
+Pour vous tenir informé du projet ou pour contribuer ( surtout pour la sécurité ) et pour récupérer les sources plus facilement je vous invite à faire un tour sur le <a href="https://github.com/AlexandreRio/s-paste">github</a>.
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

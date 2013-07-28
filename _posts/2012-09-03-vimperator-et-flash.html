@@ -1,0 +1,50 @@
+---
+layout: post
+title: Vimperator, Flash et VLC
+categories:
+- Astuce
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+---
+Bonsoir !
+
+Depuis quelques temps j'ai des problèmes avec le plugin flash de Firefox, outre les nombreux plantages ( oui je troll ) sur certaines vidéos je me retrouve avec un filtre bleu, certes le résultat est cocasse mais vite gênant.
+
+Il se trouve que j'utilise quotidiennement Vimperator, un autre plugin Firefox permettant d'utiliser son navigateur avec des contrôles prochent de ceux de l'éditeur Vim. Puisque trop peu de vidéo sont disponibles en HTML5 utiliser VLC ( ou n'importe quel lecteur multimédia supportant un flux réseau ) me semble être un bon compromis et bien sûr Vimperator va nous éviter de devoir : ouvrir VLC, aller dans "Media/Open Network Stream" pour y copier/coller l'url de la vidéo.
+
+Pour ce faire, une fois sur la page de la vidéo voulue, il suffit de faire :
+<blockquote>y:! vlc ^V</blockquote>
+Rapide explication :
+
+'y'  copie l'url courante
+
+':!' lance une commande externe
+
+'^V' ou 'Control-V' va "coller" l'url de la page voulue
+
+MàJ : Après quelques utilisation je me suis rendu compte que certaines vidéos se lancent en HD 1080p par défaut, pour éviter ça il suffit de rajouter
+<blockquote>\&amp;fmt=X ( sans ce \ Vimperator n'en tiendra pas compte )</blockquote>
+Où X correspond à la qualité voulue, voilà la liste possible :
+<pre>fmt=0 → flv: 320×240 (flv1) / mp3 1.0 22KHz (identique à fmt=5)
+fmt=5 → flv: 320×240 (flv1) / mp3 1.0 22KHz
+fmt=6 → flv: 480×360 (flv1) / mp3 1.0 44KHz
+fmt=13 → 3gp: 176×144 (mpg4) / ??? 2.0 8KHz
+fmt=17 → 3gp: 176×144 (mpg4) / ??? 1.0 22KHz
+fmt=18 → mp4: 480×360 (H264) / AAC 2.0 44KHz
+fmt=22 → mp4: 1280×720 (H264) / AAC 2.0 44KHz
+fmt=34 → flv: 320×240 (flv?) / ??? 2.0 44KHz (valeur par défaut du lecteur : 360p)
+fmt=35 → flv: 640×380 (flv?) / ??? 2.0 44KHz
+fmt=37 → mp4:1920×1080 (H264) / AAC 2.0 44KHz</pre>
+On obtient donc la ligne suivante :
+<blockquote>y :! vlc ^V \fmt=34</blockquote>
+Un exemple pour mieux se rendre compte :
+<blockquote>!vlc http://www.youtube.com/watch?v=lC1j5nyMXLM\&amp;fmt=34</blockquote>
+Et bien sur pour automatiser tout ça : une macro !
+
+Faites un <em>:map é y.! vlc \&amp;fmt=34</em> ( remplacer le é par la touche de raccourcis voulue ), puis un <em>:mkv</em> pour sauvegarder la macro ou copier simplement la ligne suivante dans votre fichier <em>.vimperatorrc</em>, à la racine de votre répertoire :
+<blockquote>map é y.! vlc\&amp;fmt=34</blockquote>
+Voilà voilà, j'espère que cette petite astuce sera utile à quelqu'un ou qu'au moins elle aura montrer la puissance et la simplicité de vimperator. À bientôt ! ;)
