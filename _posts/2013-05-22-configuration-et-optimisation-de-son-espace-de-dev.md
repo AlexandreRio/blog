@@ -60,10 +60,11 @@ Touche . pour passer en mode commande, et la commande :twitter Hello world !
 Pouvoir tweeter en si peu de keystroke et sans changer de page ça c'est de l'optimisation !
 
 ##Ce qu'il me reste à faire / améliorer
+
 <blockquote class="twitter-tweet" lang="xx-lc">Aujourd'hui je passe à offlineIMAP et mutt pour lire mes mails o/ <a href="https://twitter.com/search/%23FullCLI">#FullCLI</a> – Alexandre Rio (@Rio_Alexandre) <a href="https://twitter.com/Rio_Alexandre/status/335373857349308418">May 17, 2013</a></blockquote>
 
 <blockquote class="twitter-tweet" lang="xx-lc">Oui parce que parfois <a href="https://twitter.com/search/%23Thunderbird">#Thunderbird</a> me bouffe 100% d'un core, met 10min a récupérer un mail de 2 lignes de texte. <a href="https://twitter.com/search/%23TweetPrécédent">#TweetPrécédent</a> — Alexandre Rio (@Rio_Alexandre) <a href="https://twitter.com/Rio_Alexandre/status/335374647610732544">May 17, 2013</a></blockquote>
-
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Ça fait peu de temps que j'essaie de remplacer Thunderbird, il me reste encore à configurer mes filtres et la partie SMTP.
 
