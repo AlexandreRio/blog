@@ -7,14 +7,16 @@ categories:
 - Tutoriel
 status: publish
 ---
-#Configuration et optimisation de son espace de dév'
 Quand je bosse dans un lieu public on me demande souvent ce que j'utilise comme distribution, comme Desktop Environment ou encore comme éditeur de texte / IDE.
+
 Parce que oui ça ressemble pas à la dernière version d'Ubuntu avec Gnome Unity, pour la simple et bonne raison que je les trouve peu ergonomique et peu configurable.
 
 J'ai longtemps utilisé un laptop avec un écran de 15,4" suffisamment grand pour être confortable mais pas trop pour rester facilement transportable, j'ai toujours eu du mal avec les laptops 17"…
+
 Depuis quelques mois je suis passé à un EliteBook 2570p, vraiment parfait pour coder en déplacement : très léger, très compact, autonomie de 3 à 4 heures avec la batterie «double». Je ne vais pas faire une critique de l'ordinateur portable, juste qu'avec un écran de 12,5" les barres d'états / de menus / d'outils occupent très vite une part importante de l'écran.
 ##Environnement de bureau
 J'ai longtemps utilisé Gnome 2 puis quand est sortit Gnome 3 «Gnome Shell» je suis passé à [OpenBox](http://openbox.org/) avec un thème Darksun et tint2 pour la barre de taches. J'utilise [Conky](http://conky.sourceforge.net/) pour le monitoring. J'ai flouté un flux RSS.
+
 Au passage, si vous avez un problème de transparence sur les icônes de taches de [Tint2](http://code.google.com/p/tint2/) regardez du côté des paramètres de Compositor ou du Compositing.
 
 ![Desktop Screenshot](http://alexrio.fr/blog/wp-content/uploads/2013/05/desktop.png)
@@ -26,6 +28,7 @@ Pour optimiser la frappe je suis passé à la disposition [Bépo](http://bepo.fr
 
 ###Le terminal
 Pour développer je fais presque tout avec [Vim](http://www.vim.org/), avec les plugins:
+
 * [Vim_getset](http://www.vim.org/scripts/script.php?script_id=490) : ajout de getter / setter pour les attributs d'une classe Java
 * [Vim_nerdtree](http://www.vim.org/scripts/script.php?script_id=1658) : pour faciliter la navigation dans les dossiers depuis Vim
 * [Vim_tabular](https://github.com/godlygeek/tabular) : pour des lignes en fonctions d'un pattern, le = par exemple
@@ -38,7 +41,9 @@ Pour développer je fais presque tout avec [Vim](http://www.vim.org/), avec les 
 
 Au lieu de devoir lancer plusieurs terminaux j'utilise le multiplexer [tmux](http://tmux.sourceforge.net/).
 Dans la status bar de tmux l'état de mes boites mails et une horloge, comme ça même en fullscreen tout est disponible.
+
 ![tmux](http://alexrio.fr/blog/wp-content/uploads/2013/05/tmux.png)
+
 J'utilise 2 sessions avec tmux, la première est celle qui apparait à l'ouverture du terminal, elle est vide. La seconde contient 3 onglets avec une instance de mutt dans chaque.
 
 Les emails sont récupérés en IMAP avec [offlineimap](http://offlineimap.org/), les mots de passe sont stockés par gnome-keyring, allez voir l'article de [Gnome_keyring](http://jason.the-graham.com/2011/01/16/gnome_keyring_with_msmtp_imapfilter_offlineimap/) si vous voulez automatiser dans une cron.
@@ -51,6 +56,7 @@ J'utilise Firefox, sur le canal stable, je suis pas développeur donc pas besoin
 ![Firefox](http://alexrio.fr/blog/wp-content/uploads/2013/05/firefox.png)
 
 Le plugin le plus important que j'utilise est clairement Pentadactyl, il permet d'utiliser Firefox avec les mêmes raccourcis claviers que Vim, puisque tout se fait au clavier tous les menus et barres peuvent être désactivés pour gagner encore plus d'espace.
+
 J'ai modifié le hint-mode, qui permet de «cliquer» sur les liens d'une page à l'aide du clavier, pour le rendre plus ergonomique. Les lettres proposées correspondent à la partie gauche d'un clavier bépo, le hint-mode se déclenchant avec la touche f, située à droite du clavier. Le style css des propositions correspond peu ou prou à celui du plugin chrome Vimium qu'un ami utilisait et qui est bien plus lisible.
 
 J'ai rebindé quelque commande, soit pour s'adapter à un mapping bépo soit pour gagner du temps, pour la commande :downloads par exemple.
