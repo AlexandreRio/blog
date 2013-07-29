@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Alexandre RIO – Home
+title: Alexandre RIO
 ---
 
 <article>
   <ul>
     {% for post in site.posts %}
     <li><time datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date_to_string }}</time><a href="{{ post.url}}">{{ post.title }}</a></li>
-    <p class="entry_description">{{ post.content | strip_html | truncatewords 2 }}</p>
+    <p class="entry_description">{{ post.content | strip_html | truncatewords: 40 }}</p>
     {% endfor %}
   </ul>
 </article>
