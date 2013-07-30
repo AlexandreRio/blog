@@ -26,6 +26,13 @@ body > .post img {
   padding: 40px;
 }
 
+.meta {
+  color: #8e8c8c;
+  margin-top: -10px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
 .post pre {
   line-height: 1.2em;
   padding-left: 3px;
