@@ -22,6 +22,11 @@ body > .post {
   padding: 20px 10px 0;
 }
 
+article > h2 {
+  margin-left: 370px;
+  padding: 20px 10px 0;
+}
+
 body > .post img {
   padding: 40px;
 }
