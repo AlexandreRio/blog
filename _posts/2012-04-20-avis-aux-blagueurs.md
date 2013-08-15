@@ -4,14 +4,7 @@ title: Avis aux blagueurs !
 categories:
 - Blog
 - Humour
-tags: []
-status: publish
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  Sidebar_value: 'on'
-  Nav_value: 'on'
 ---
 Salutation !
 

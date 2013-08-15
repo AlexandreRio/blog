@@ -5,78 +5,90 @@ body {margin: 0}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body > article {
-  line-height: 1.6em;
-  display: block;
-  max-width: 600px;
-  margin-top: 40px;
-  margin-left: 350px;
-  padding: 20px 10px 0;
+  line-height : 1.6em;
+  display     : block;
+  max-width   : 600px;
+  margin-top  : 40px;
+  margin-left : 350px;
+  padding     : 20px 10px 0;
 }
 body > .post {
-  line-height: 1.6em;
-  display: block;
-  max-width: 800px;
-  margin-top 40px;
-  margin-left: 370px;
-  margin-bottom: 300px;
-  padding: 20px 10px 0;
+  line-height      : 1.6em;
+  display          : block;
+  max-width        : 800px;
+  margin-top       : 40px;
+  margin-left      : 370px;
+  margin-bottom    : 300px;
+  padding          : 20px 10px 0;
 }
 
 article > h2 {
-  margin-left: 370px;
-  padding: 20px 10px 0;
+  margin-left : 370px;
+  padding     : 20px 10px 0;
 }
 
 body > .post img {
-  padding: 40px;
+  padding : 40px;
 }
 
 .meta {
-  color: #8e8c8c;
-  margin-top: -10px;
-  padding-left: 10px;
-  font-style: italic;
+  color        : #8e8c8c;
+  margin-top   : -10px;
+  padding-left : 10px;
+  font-style   : italic;
 }
 
 .post pre {
-  line-height: 1.2em;
-  padding-left: 3px;
-  border-left: 2px solid rgb(237, 237, 237);
+  line-height  : 1.2em;
+  padding-left : 3px;
+  border-left  : 2px solid rgb(237, 237, 237);
 }
 
 a { color:rgb(33,117,155); text-decoration:none; }
 a:hover { color: rgb(15,54,71);text-decoration: underline; }
 
 aside {
-  width: 320px; height: 80%;
-  position: fixed;
-  top: 10%; left: 30px;
-  padding: 50px;
-  border-right: 2px solid rgb(237, 237, 237);
+  width        : 320px;
+  height       : 80%;
+  position     : fixed;
+  top          : 10%;
+  left         : 30px;
+  padding      : 50px;
+  border-right : 2px solid rgb(237, 237, 237);
 }
 
 aside > p {
-  margin: 0;
-  color: rgb(81,81,81);
-  line-height: 180%;
+  margin      : 0;
+  color       : rgb(81,81,81);
+  line-height : 180%;
 }
 
 .photo {
-  width: 100px;
-  border-radius: 20%;
-  display: block;
-  margin: 0 10px 40px 10px;
-  box-shadow: 0 0 2px 0 black;
+  width         : 100px;
+  border-radius : 20%;
+  display       : block;
+  margin        : 0 10px 40px 10px;
+  box-shadow    : 0 0 2px 0 black;
+}
+
+.archives {
+  font-size   : 120%;
+  margin-left : 240px;
+  margin-top  : 30px;
+  padding     : 10px 10px 0;
+  text-align  : center;
+  width       : 55%;
+  border-top  : 2px solid rgb(237, 237, 237);
 }
 
 .photo:hover {
-  box-shadow: 0 0 4px rgb(33, 117, 155);
+  box-shadow : 0 0 4px rgb(33, 117, 155);
 
-  -webkit-transition: 200ms;
-  -moz-transition: 200ms;
-  -ms-transition: 200ms;
-  -o-transition: 200ms;
-  transition: 200ms;
+  -webkit-transition : 200ms;
+  -moz-transition    : 200ms;
+  -ms-transition     : 200ms;
+  -o-transition      : 200ms;
+  transition         : 200ms;
 }
 
 article {
@@ -84,21 +96,21 @@ article {
 }
 
 article li {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 100%;
-  margin-bottom: 10px;
-  list-style: none;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+  max-width     : 100%;
+  margin-bottom : 10px;
+  list-style    : none;
 }
 
 article li time {
-  margin-right: 20px;
-  margin-left: -10px;
-  display: inline-block;
-  width: 120px;
-  text-align: right;
-  color: #aaa;
+  margin-right : 20px;
+  margin-left  : -10px;
+  display      : inline-block;
+  width        : 120px;
+  text-align   : right;
+  color        : #aaa;
 }
 .entry_description {
   margin-bottom: 20px;
@@ -115,14 +127,14 @@ article li time {
 
 @media (max-width: 900px) {
   aside {
-    width: 90%;
-    height: auto;
-    padding: 14px;
-    position: static;
-    margin: 10px 40px 0 40px;
-    font-size: 110%;
-    border-right: 0;
-    border-bottom: 2px solid rgb(237, 237, 237);
+    width         : 90%;
+    height        : auto;
+    padding       : 14px;
+    position      : static;
+    margin        : 10px 40px 0 40px;
+    font-size     : 110%;
+    border-right  : 0;
+    border-bottom : 2px solid rgb(237, 237, 237);
   }
   body > article {
     margin: 0 auto;

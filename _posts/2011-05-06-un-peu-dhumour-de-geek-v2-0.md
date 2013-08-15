@@ -4,13 +4,7 @@ title: Un peu d'humour de geek? V2.0
 categories:
 - Coding
 - Humour
-tags: []
-status: publish
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  _syntaxhighlighter_encoded: '1'
 ---
 Bonjour!
 
@@ -18,7 +12,8 @@ Comme je suis en vacance j'ai eu le temps de revoir mon <a href="http://orbital-
 
 Voilà le code source:
 
-[bash]#!/bin/bash
+{% highlight bash %}
+#!/bin/bash
 #                           Script d'affichage de blague de geek V2.0
 #                                   Necessite le paquet zenity
 #################################################################################################
@@ -26,25 +21,28 @@ Voilà le code source:
 #                               http://twitter.com/Rio_Alexandre
 #################################################################################################
 
-let &quot;continuer=1&quot;
+let "continuer=1"
 
 while [ $continuer -eq 1 ]
 do
  message=`wget -O  - http://orbital-project.kegtux.org/programmes/bdg_script.php`
 
- zenity --info --text=&quot;$message&quot; --title=&quot;Blague de geek&quot;
- zenity --question --ok-label=&quot;une autre!&quot; --cancel-label=&quot;Quitter&quot; --text=&quot;Continuer ?&quot;
+ zenity --info --text="$message" --title="Blague de geek"
+ zenity --question --ok-label="une autre!" --cancel-label="Quitter" --text="Continuer ?"
  if [ $? -eq 0 ]
  then
- let &quot;continuer = 1&quot;
+ let "continuer = 1"
  else
- let &quot;continuer = 0&quot;
+ let "continuer = 0"
  fi
 
-done[/bash]
+done
+{% endhighlight %}
 
 Et le nouveau design:
 
-<a href="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/bdg_scrip_v2.png"><img class="aligncenter size-full wp-image-162" title="bdg_scrip_v2" src="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/bdg_scrip_v2.png" alt="" width="492" height="189" /></a>L'encodage merdouille encore un petit peu, quand c'est le cas ou rien de n'affiche et le script vous demande si vous voulez continuer, ou on vous dit que "Toutes les mises à jour sont complètes." ( pour des raisons qui me sont inconnues...)
+![](http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/bdg_scrip_v2.png)
+
+L'encodage merdouille encore un petit peu, quand c'est le cas ou rien de n'affiche et le script vous demande si vous voulez continuer, ou on vous dit que "Toutes les mises à jour sont complètes." ( pour des raisons qui me sont inconnues...)
 
 À la prochaine!

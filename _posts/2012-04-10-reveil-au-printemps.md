@@ -3,14 +3,7 @@ layout: post
 title: Réveil au printemps
 categories:
 - Blog
-tags: []
-status: publish
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  Sidebar_value: 'on'
-  Nav_value: 'on'
 ---
 Le printemps est là et bien installé; les animaux sortent de leur hibernation et mon blog aussi.
 

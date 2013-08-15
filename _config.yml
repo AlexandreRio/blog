@@ -1,3 +1,5 @@
 name: Alexandre Rio
 markdown: redcarpet
 pygments: true
+include: ['.htaccess']
+permalink: date

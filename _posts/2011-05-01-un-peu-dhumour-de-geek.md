@@ -4,13 +4,7 @@ title: Un peu d'humour de geek?
 categories:
 - Coding
 - Humour
-tags: []
-status: publish
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  _syntaxhighlighter_encoded: '1'
 ---
 Bien le bonjour!
 
@@ -18,17 +12,18 @@ Aujourd'hui je vous propose un Shellscript Bash pour afficher des blagues de gee
 
 En fait ceux sont les mêmes blagues qui s'affichent en haut à droite de ce blog ( d'ailleurs certaines ont encore des problèmes d'encodage mais j'y travaille).
 
-Pour exécuter ce code il faut la librairie zenity, installée par défaut sous Ubuntu, qui permet d'afficher des boites de dialogue GTK+,  s'il n'est pas présent sur votre machine un <em>sudo apt-get install zenity</em> devrait suffire.
+Pour exécuter ce code il faut la librairie zenity, installée par défaut sous Ubuntu, qui permet d'afficher des boites de dialogue GTK+,  s'il n'est pas présent sur votre machine un `sudo apt-get install zenity` devrait suffire.
 
-Le script est donc disponible <em><a href="http://orbital-project.kegtux.org/programmes/bdg.sh">ici</a></em> ou via la commande:
+Le script est donc disponible <a href="http://orbital-project.kegtux.org/programmes/bdg.sh">ici</a> ou via la commande:
 
-[bash]cd $HOME/Bureau &amp;&amp; wget http://orbital-project.kegtux.org/programmes/bdg.sh &amp;&amp; chmod +x bdg.sh &amp;&amp; ./bdg.sh[/bash]
+`cd $HOME/Bureau &amp;&amp; wget http://orbital-project.kegtux.org/programmes/bdg.sh &amp;&amp; chmod +x bdg.sh &amp;&amp; ./bdg.sh`
 
 
 
 Et pour ceux qui ont la flemme de le télécharger voilà le code source:
 
-[bash]#!/bin/bash
+{% highlight bash %}
+#!/bin/bash
 #                               Script d'affichage de blague de geek
 #                                   Necessite le paquet zenity
 #################################################################################################
@@ -36,8 +31,8 @@ Et pour ceux qui ont la flemme de le télécharger voilà le code source:
 #                               http://twitter.com/Rio_Alexandre
 #################################################################################################
 
-Cache=&quot;$HOME/.bdg_cache&quot;
-let &quot;continuer=1&quot;
+Cache="$HOME/.bdg_cache"
+let "continuer=1"
 if [ ! -d $Cache ]
 then
  mkdir $Cache
@@ -49,21 +44,24 @@ do
  rm *.php
  wget http://orbital-project.kegtux.org/programmes/list.php
 
- zenity --info --text=&quot;`cat list.php`&quot; --title=&quot;Blague de geek&quot; --width=200 --height=150
- zenity --question --ok-label=&quot;une autre!&quot; --cancel-label=&quot;Quitter&quot; --text=&quot;Continuer ?&quot;
+ zenity --info --text="`cat list.php`" --title="Blague de geek" --width=200 --height=150
+ zenity --question --ok-label="une autre!" --cancel-label="Quitter" --text="Continuer ?"
  if [ $? -eq 0 ]
  then
- let &quot;continuer = 1&quot;
+ let "continuer = 1"
  else
- let &quot;continuer = 0&quot;
+ let "continuer = 0"
  fi
 
-done[/bash]
+done
+{% endhighlight %}
 
 Le script créera le dossier .bdg_cache pour stocker la blague à afficher, le dossier est caché et est vidé à chaque exécution donc il devrait pas trop gêner.
 
 Et voilà le rendu:
 
-<a href="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/script_bdg.png"><img class="aligncenter size-full wp-image-156" title="script_bdg" src="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/script_bdg.png" alt="" width="420" height="210" /></a>Quand j'aurais le temps je verrai pour rajouter des couleurs au titre, à l'auteur et à la date.
+![](http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/script_bdg.png)
+
+Quand j'aurais le temps je verrai pour rajouter des couleurs au titre, à l'auteur et à la date.
 
 En espérant qu'elles vous feront rire. ++
