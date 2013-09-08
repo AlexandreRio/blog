@@ -23,12 +23,12 @@ Et tout ça en ASCII-Art. Bien que certains utilisent un simple fichier texte en
 ##Exemples
 Si vous essayez d'ouvrir un fichier nfo avec un éditeur de texte classique voici ce que vous obtiendrez :
 
-![Fichier nfo ouvert avec un éditeur de texte ne supportant pas l'encodage cp437.](http://alexrio.fr/blog/wp-content/uploads/2013/01/nfo_error.png)
+![Fichier nfo ouvert avec un éditeur de texte ne supportant pas l'encodage cp437.](/assets/2013/01/nfo_error.png)
 Fichier nfo ouvert avec un éditeur de texte ne supportant pas l'encodage cp437, ici gedit 3.4.2.
 
 Alors que ce fichier contient en réalité :
 
-![Fichier nfo ouvert avec NFO Viewer 1.11](http://alexrio.fr/blog/wp-content/uploads/2013/01/nfo_no_error.png)
+![Fichier nfo ouvert avec NFO Viewer 1.11](/assets/2013/01/nfo_no_error.png)
 Fichier nfo ouvert avec NFO Viewer 1.11
 
 Le problème est donc de trouver un éditeur de texte supportant cet encodage, sous Windows c'est assez facile à trouver, pour un système basé sur GNU/Linux bien plus dur.
@@ -37,7 +37,7 @@ On trouve facilement des viewers permettant d'afficher des fichiers nfo et des p
 
 ##nfo-modifier
 
-![](http://alexrio.fr/blog/wp-content/uploads/2013/01/interface.png)
+![](/assets/2013/01/interface.png)
 Fenêtre principale de nfo-modifier.
 
 C'est pourquoi je vous présente nfo-modifier, un projet que j'ai débuté il y a quelques mois et que je poursuis quand j'ai du temps libre, malheureusement trop rarement.

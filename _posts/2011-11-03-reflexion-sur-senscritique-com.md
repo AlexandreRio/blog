@@ -5,7 +5,7 @@ categories:
 - Useless
 type: post
 ---
-![](http://alexrio.fr/blog/wp-content/uploads/2011/11/senscritique-1024x511.png)
+![](/assets/2011/11/senscritique-500x249.png)
 
 J'ai déjà parlé ici du site [senscritique.com](http://senscritique.com), si vous ne voyez pas de quoi je parle c'est par [ici](2011/06/25/critiquer-pour-aider-a-mieux-consommer/).
 

@@ -7,11 +7,11 @@ type: post
 ---
 Juste en passant je voulais partager un bug que j'ai provoqué dans Ōkami, en forçant le respawn d'un ennemi afin de farmer les crocs de démon ( 5 par combat de ~10s) la moitié des modèles 3D a eu un léger «problème», regardez plutôt :
 
-![Un dialogue en temps réel, à part le texte de dialogue le reste de l'écran bug sévèrement](http://alexrio.fr/blog/wp-content/uploads/2013/03/20130305_021924.jpg)
+![Un dialogue en temps réel, à part le texte de dialogue le reste de l'écran bug sévèrement](/assets/2013/03/20130305_021924-700-525.jpg)
 
-![Le loup, sans sa tête](http://alexrio.fr/blog/wp-content/uploads/2013/03/20130305_021114.jpg)
+![Le loup, sans sa tête](/assets/2013/03/20130305_021114-700x525.jpg)
 
-![Le loup et un pnj, sans leur haut du corp](http://alexrio.fr/blog/wp-content/uploads/2013/03/20130305_021838.jpg)
+![Le loup et un pnj, sans leur haut du corp](/assets/2013/03/20130305_021838-700x525.jpg)
 
 Après rechargement de la sauvegarde tout revient dans l'ordre, en soi ce n'était pas gênant en jeu, seules les cinématiques en temps réel étaient impossible à voir.
 

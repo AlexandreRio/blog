@@ -41,7 +41,7 @@ done
 
 Et le nouveau design:
 
-![](http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/bdg_scrip_v2.png)
+![](/assets/2011/05/bdg_scrip_v2.png)
 
 L'encodage merdouille encore un petit peu, quand c'est le cas ou rien de n'affiche et le script vous demande si vous voulez continuer, ou on vous dit que "Toutes les mises à jour sont complètes." ( pour des raisons qui me sont inconnues...)
 

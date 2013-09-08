@@ -5,11 +5,11 @@ categories:
 - Internet
 type: post
 ---
-![rsslounge-logo](http://alexrio.fr/blog/wp-content/uploads/2012/07/small-logo.png)
+![rsslounge-logo](/assets/2012/07/small-logo.png)
 
 Dans une optique de veille technologique les flux RSS sont bien souvent le meilleur moyen de ne rien rater. L'arrivée de Twitter dans les mœurs a un peu changé la donne  mais le système de TimeLine est bien trop éphémère dès qu'on suit plus de 100 personnes. La solution consiste donc à utiliser un agrégateur de flux RSS.
 
-Ce que doit proposer un <em>bon</em> agrégateur de flux RSS:
+Ce que doit proposer un *bon* agrégateur de flux RSS:
 
 * La possibilité de hiérarchiser ses flux, via une gestion de dossiers ou de catégories
 * Pouvoir noter certains articles comme plus importants pour une lecture ultérieur, même si l'article est noté 'comme lu'
@@ -32,4 +32,15 @@ L'installation est très rapide, il suffit de saisir les informations de base de
 
 Il ne vous reste plus qu'à ajouter des flux RSS ou importer vos données depuis un autre agrégateur et c'est prêt !
 
-<a href="http://alexrio.fr/blog/wp-content/uploads/2012/07/rssLoungeExample.png"><img class="aligncenter size-large wp-image-353" title="rssLounge-example" alt="" src="http://alexrio.fr/blog/wp-content/uploads/2012/07/rssLoungeExample-1024x507.png" width="800" height="396" /></a>
+![rssLounge example](/assets/2012/07/rssLoungeExample-1024x507.png)
+
+<div class="comments">
+  <div class="comment">
+    <p class="comment-author"><a href="http://garfieldairlines.net">garfieldairlines</a><time datetime="2012-07-11">le 11 Jul 2012 à 14h59</time></p>
+    <p class="comment-content">Puis-je suggérer TinyTiny RSS ? C'est ma solution préférée.</p>
+    <div class="odd">
+    <p class="comment-author">Orbital ( Auteur )<time datetime="2012-07-11">le 11 Jul 2012 à 15h11</time></p>
+    <p class="comment-content">Ah oui ça à l'air pas mal aussi, j'essayerai si RssLounge ne me convient plus. En plus il y a aussi une application Android, c'est toujours pratique.</p>
+    </div>
+  </div>
+</div>

@@ -11,7 +11,7 @@ type: post
 
 Senscritique recense tous les films et séries, BD et œuvres littéraires (et bientôt œuvres musicales) en prenant bien soin d'éviter les doublons, à partir de là il est possible de donner une note de 1 à 10, de rédiger une critique qui sera visible sur la fiche de l’œuvre de recommander l’œuvre ou de la rajouter à sa catégorie je veux y jouer/je veux le lire/je veux le voir.
 
-<a href="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/06/senscritique_diablo.jpg"><img class="aligncenter size-medium wp-image-171" title="senscritique_diablo" src="http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/06/senscritique_diablo-300x238.jpg" alt="" width="300" height="238" /></a>
+![](/assets/2011/06/senscritique_diablo.jpg)
 <em>Une partie de la fiche d'un jeu vidéo.</em>
 
 ####Mais c'est un moyen de nous cibler et de nous balancer plein de pub?!

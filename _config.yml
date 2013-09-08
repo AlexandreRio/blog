@@ -2,4 +2,5 @@ name: Alexandre Rio
 markdown: redcarpet
 pygments: true
 include: ['.htaccess']
+exclude: ['publish.sh', 'assets']
 permalink: date

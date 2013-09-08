@@ -7,7 +7,8 @@ categories:
 - Tutoriel
 type: post
 ---
-<p style="text-align: center;"><a href="http://alexrio.fr/blog/wp-content/uploads/2011/11/piratebox-logo.png"><img class="size-full wp-image-209 aligncenter" title="piratebox-logo" src="http://alexrio.fr/blog/wp-content/uploads/2011/11/piratebox-logo.png" alt="" width="226" height="199" /></a></p>
+![](/assets/2011/11/piratebox-logo.png)
+
 Cela fait quelque temps que je me renseigne sur le principe de la Piratebox, vous pouvez en faire de même <a title="wiki_piratebox" href="http://wiki.daviddarts.com/PirateBox" target="_blank">là</a>( la version 0.3-3 V1.2). Puisque je ne parlerai ici que de l'aspect technique de l'installation sur un ordinateur portable.
 
 J'ai suivi ce tuto en pensant que tout se passerait bien mais j'ai eu plusieurs erreurs en voulant lancer le init.d/piratebox start.  Je vais donc détailler ici les modifications que j'ai effectué et quels fichiers modifier pour customiser un peu votre piratebox.

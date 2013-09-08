@@ -58,6 +58,7 @@ Concrètement un paquet est simplement une archive compressée et des méta-donn
 ### Méta-données
 
 Les méta-données seront lues par le gestionnaire de paquets, il peut s'agir par exemple du :
+
 * nom du paquet,
 * descriptif,
 * numéro de version,
@@ -69,6 +70,7 @@ Les méta-données seront lues par le gestionnaire de paquets, il peut s'agir pa
 ### Fichiers
 
 Les fichiers compilés qui seront installés, sous la forme d'une arborescence, on peut imaginer le contenu suivant :
+
     ./usr/bin/foo
     ./usr/share/foo/doc/default.conf
 

@@ -16,7 +16,7 @@ Pour exécuter ce code il faut la librairie zenity, installée par défaut sous 
 
 Le script est donc disponible <a href="http://orbital-project.kegtux.org/programmes/bdg.sh">ici</a> ou via la commande:
 
-`cd $HOME/Bureau &amp;&amp; wget http://orbital-project.kegtux.org/programmes/bdg.sh &amp;&amp; chmod +x bdg.sh &amp;&amp; ./bdg.sh`
+`cd $HOME/Bureau && wget http://orbital-project.kegtux.org/programmes/bdg.sh && chmod +x bdg.sh && ./bdg.sh`
 
 
 
@@ -60,7 +60,7 @@ Le script créera le dossier .bdg_cache pour stocker la blague à afficher, le d
 
 Et voilà le rendu:
 
-![](http://orbital-project.kegtux.org/blog/wp-content/uploads/2011/05/script_bdg.png)
+![](/assets/2011/05/script_bdg.png)
 
 Quand j'aurais le temps je verrai pour rajouter des couleurs au titre, à l'auteur et à la date.
 
