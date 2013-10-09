@@ -85,7 +85,7 @@ N'hésitez pas à laisser un commentaire pour me faire part de vos remarques, qu
 
 * [Jason's Blog](http://jason.the-graham.com/2011/01/10/email_with_mutt_offlineimap_imapfilter_msmtp_archivemail/) pour la partie gestion des emails.
 
-_
+
 <br />
 <div class="comments">
 <h2>Commentaires:</h2>
@@ -95,14 +95,14 @@ _
     <p>Perso je n'ai plus tint2. Pour gagner de la place de ce côté tout en y gagnant côté praticité, j'ai 1) pour les applis un Cairo-Dock (un truc ~similaire au dock OS X) en bas à gauche de l'écran qui est transparent quand non utilisé, et 2) pour l'heure/systray etc, un panel xfce en bas à droite de mon écran qui ne se montre qu'au survol de la souris.</p>
     <p>Résultat j'ai tout ce qu'il faut sans que ça prenne ne serait-ce qu'un précieux pixel vu que tout "flotte". Mais vu que j'affiche tout aux survols de souris, ça doit en effet pas trop être adapté à ton utilisation full clavier.</p>
 
-<p>    Ton thème darksun pour openbox tu l'as trouvé où ? J'avais vu le thème de Paul Rouget aussi, que j'aimais bien ! Mais c'est pour xfce... à moins que le truc xfce soit compatible openbox ? Perso j'utilise acid-box.</p>
+   <p>    Ton thème darksun pour openbox tu l'as trouvé où ? J'avais vu le thème de Paul Rouget aussi, que j'aimais bien ! Mais c'est pour xfce... à moins que le truc xfce soit compatible openbox ? Perso j'utilise acid-box.</p>
 
 <p>    Sinon, je suis etonné de ne pas te voir parler de tiling alors que tu veux tout faire au clavier. Avec openbox, j'utilise pytyle que je trouve super : ça s'occupe de redimensionner et positionner tes fenêtres tout seul. Quand l'automatisme te plait pas, tu peux bien sûr t'occuper de tes fenêtres avec des gentils raccourcis claviers.</p>
-    </div>
-    <div class="odd">
-    <p class="comment-author">Orbital ( Auteur )<time datetime="2012-07-11">le 11 Jul 2012 à 15h11</time></p>
-    <div class="comment-content">
-    <p>Oui tint2 me gêne un peu aussi, j'ai du le mettre à la verticale quand je suis passé à un dualscreen «l'un au dessus de l'autre», tint2 m'empêchait de déplacer ma souris d'un écran à l'autre. Il y a quelques jours je me suis rendu compte qu'il est possible de la rendre invisible, par exemple de telle sorte que les fenêtre se maximise par dessus; et ça c'est même pas précisé dans la doc.</p>
+   </div>
+   <div class="odd">
+   <p class="comment-author">Rio ( Auteur )<time datetime="2012-07-11">le 11 Jul 2012 à 15h11</time></p>
+   <div class="comment-content">
+   <p>Oui tint2 me gêne un peu aussi, j'ai du le mettre à la verticale quand je suis passé à un dualscreen «l'un au dessus de l'autre», tint2 m'empêchait de déplacer ma souris d'un écran à l'autre. Il y a quelques jours je me suis rendu compte qu'il est possible de la rendre invisible, par exemple de telle sorte que les fenêtre se maximise par dessus; et ça c'est même pas précisé dans la doc.</p>
  <p>   Ah oui désolé, le thème darksun est avec XFCE, OpenBox plante sur mon OpenSuse ( distrib' en quelque sorte imposée pour un projet sur lequel je bosse). Sur mon autre laptop avec OpenBox j'utilise le thème Onyx, fourni de base.</p>
  <p>   Finalement XFCE me va, en enlevant les panels et en utilisant tint2 à la place c'est presque aussi bien qu'OpenBox.</p>
 

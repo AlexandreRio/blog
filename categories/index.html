@@ -5,4 +5,8 @@ title: Alexandre RIO | Categories
 
 <article>
   <h2>Catégories</h2>
+
+  {% for category in site.categories %}
+    <p>*: {{ category.name}}</p>
+  {% endfor %}
 </article>

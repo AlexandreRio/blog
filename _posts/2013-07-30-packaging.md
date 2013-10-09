@@ -195,7 +195,7 @@ Par exemple pour garder tous les executables produits :
 
 `%{_bindir}/*`
 
-Nota : Attention à votre valeur de %{_prefix}, elle peut valoir /usr/local/ et non /usr/.
+Nota : Attention à votre valeur de `%{_prefix}`, elle peut valoir /usr/local/ et non /usr/.
 
 ### Packaging
 

@@ -1,6 +1,7 @@
-name: Alexandre Rio
-markdown: redcarpet
-pygments: true
-include: ['.htaccess']
-exclude: ['publish.sh', 'assets']
-permalink: date
+name      : Alexandre Rio
+url       : alexrio.fr
+markdown  : redcarpet
+pygments  : true
+include   : ['.htaccess']
+exclude   : ['publish.sh', 'assets', 'publish_assets.lftp', 'publish_posts.lftp']
+permalink : date

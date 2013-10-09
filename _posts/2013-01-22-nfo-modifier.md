@@ -37,8 +37,10 @@ On trouve facilement des viewers permettant d'afficher des fichiers nfo et des p
 
 ##nfo-modifier
 
-![](/assets/2013/01/interface.png)
-Fenêtre principale de nfo-modifier.
+<figure>
+<img src="/assets/2013/01/interface.png">
+<figcaption>Fenêtre principale de nfo-modifier.</figcaption>
+</figure>
 
 C'est pourquoi je vous présente nfo-modifier, un projet que j'ai débuté il y a quelques mois et que je poursuis quand j'ai du temps libre, malheureusement trop rarement.
 
