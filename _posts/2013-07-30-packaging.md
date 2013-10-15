@@ -8,7 +8,7 @@ categories:
 
 ## Introduction
 
-L'opensource c'est bien, ça offre énormement d'avantages, les licences libres c'est encore mieux, je ne m'étendrais pas plus sur ce sujet.
+L'opensource c'est bien, ça offre énormément d'avantages, les licences libres c'est encore mieux, je ne m'étendrais pas plus sur ce sujet.
 
 Le développement de forges «sociales» qui intègrent, un logiciel de version de contrôle ( git ou svn ), un bugtracker, un forum ou un wiki et une joli page d'accueil et ce pour chaque projet ont permis le développement de nombreux projets, certains aboutissant, d'autres sont laissés à l'abandon après quelques semaines.
 La ( une ? ) raison à cela est que beaucoup de projet commence par du code, puis code encore et… c'est pratiquement tout. Peu de temps passer à documenter et encore moins à distribuer.
@@ -20,7 +20,7 @@ L'utilisateur doit donc :
 
 * Lire le fichier README pour comprendre comme le projet est structuré,
 * lire le ficiher INSTALL pour voir comment la compilation va se passer ( cmake, make, un configure avant ? ),
-* faire plusieurs tentatives parceque les bonnes dépendances ne sont pas installées pour
+* faire plusieurs tentatives parce que les bonnes dépendances ne sont pas installées pour
 * finalement installer le programme sur son système
 
 
