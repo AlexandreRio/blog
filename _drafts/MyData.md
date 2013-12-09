@@ -1,6 +1,8 @@
 ---
 layout: post
 title: My Data back !
+categories:
+- Internet
 ---
 
 Suite à la lecture du rédacteur en chef de rue89.fr «[Ma semaine sans google](http://www.rue89.com/2013/10/11/semaine-sans-google-13-mail-sans-gmail-ca-paye-246434)» je me suis d'abord dit :
@@ -11,8 +13,18 @@ Outre le fait que l'initiative soit dès le début prévue comme temporaire je m
 
 L'article de rue89 m'a donc donné la motivation qu'il me fallait pour avoir encore un plus de données «chez moi».
 
-TODO:
-Mozilla-sync
-caldav
-carddav
-cyanogen mod ( cf conf sur les baseband )
+Voilà ce que j'ai changé
+
+##Mozilla-sync
+
+J'utilise exclusivement pour la navigation et le service Mozilla Sync pour mémoriser et synchroniser mes mots de passe et bookmarks. J'ai donc installé mon propre serveur Sync plutôt que d'utiliser ceux de Mozilla, même si les données sont chiffrées et théoriquement illisibles par une tierce personne sans la clé de récupération.
+
+##Carddav
+
+La chose qui me gênait le plus était d'utiliser Google pour synchroniser mes contacts entre mon téléphone sous Android et mon laptop, je faisais des exports en csv que j'importais dans Thunderbird.
+
+Conséquence : installation d'un serveur carddav pour tout synchroniser ça, pour le moment evolution sur le laptop, je pense passer à un mode CLI pour l'intégrer à Mutt dès que je trouve le temps. Et DavDroid pour le smartphone, c'est du FOSS en plus. :D
+
+##Caldav
+
+##Cyanogen mod ( cf conf sur les baseband )
