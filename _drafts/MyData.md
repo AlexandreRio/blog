@@ -23,8 +23,13 @@ J'utilise exclusivement pour la navigation et le service Mozilla Sync pour mémo
 
 La chose qui me gênait le plus était d'utiliser Google pour synchroniser mes contacts entre mon téléphone sous Android et mon laptop, je faisais des exports en csv que j'importais dans Thunderbird.
 
-Conséquence : installation d'un serveur carddav pour tout synchroniser ça, pour le moment evolution sur le laptop, je pense passer à un mode CLI pour l'intégrer à Mutt dès que je trouve le temps. Et DavDroid pour le smartphone, c'est du FOSS en plus. :D
+Conséquence : installation d'un serveur carddav pour tout synchroniser ça.
+Sur Android j'utilise [DAVDroid](http://davdroid.bitfire.at/what-is-davdroid), sur mon laptop j'utilise [pycarddav](https://github.com/geier/pycarddav/), qui s'utilise en CLI donc très pratique pour Mutt ( mais pas que).
 
 ##Caldav
 
+Pour synchroniser ses agendas, il faut juste avoir un Adapter caldav pour que l'agenda d'Android puisse se synchroniser.
+
 ##Cyanogen mod ( cf conf sur les baseband )
+
+
