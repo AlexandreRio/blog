@@ -7,13 +7,14 @@ categories:
 
 Suite à la lecture du rédacteur en chef de rue89.fr «[Ma semaine sans google](http://www.rue89.com/2013/10/11/semaine-sans-google-13-mail-sans-gmail-ca-paye-246434)» je me suis d'abord dit :
 
-    «C'est bien qu'une personne qui ne soit pas «du secteur IT» (enfin vous me comprenez, geek toussa ) prenne des décissions comme ça et communique dessus.»
+    «C'est bien qu'une personne qui ne soit pas «du secteur IT» (enfin vous me comprenez,
+    geek toussa ) prenne des décissions comme ça et communique dessus.»
 
 Outre le fait que l'initiative soit dès le début prévue comme temporaire je me suis ensuite remis en question. Même si j'utilise beaucoup d'outils qui me permettent d'avoir plus d'emprise sur mes données c'est encore très loin d'être parfait.
 
-L'article de rue89 m'a donc donné la motivation qu'il me fallait pour avoir encore un plus de données «chez moi».
+L'article de rue89 m'a donc donné la motivation qu'il me fallait pour avoir encore un peu plus de données «chez moi».
 
-Voilà ce que j'ai changé
+Voilà ce que j'ai changé :
 
 ##Mozilla-sync
 
@@ -28,8 +29,13 @@ Sur Android j'utilise [DAVDroid](http://davdroid.bitfire.at/what-is-davdroid), s
 
 ##Caldav
 
-Pour synchroniser ses agendas, il faut juste avoir un Adapter caldav pour que l'agenda d'Android puisse se synchroniser.
+Pour synchroniser ses agendas, il faut juste avoir un Adapter caldav pour que l'application calendrier d'Android puisse se synchroniser sur un serveur CalDAV.
 
-##Cyanogen mod ( cf conf sur les baseband )
+##Cyanogen mod
 
+Même si on ne peut pas avoir de téléphone vraiment libre ( voir la [conf de Jérémie Zimmermann](#link1)) retirer les services Google est déjà un mieux. J'ai donc installé Cyanogen mod.
 
+####Ref
+<ol>
+<li id=link1>«Jérémie Zimmermann : Nos machines sont-elles encore réellement nos amies?» à Pas Sage en Seine 2013.<a href="http://lacantine.ubicast.eu/videos/21-06-2013-215359/">http://lacantine.ubicast.eu/videos/21-06-2013-215359/</a></li>
+</ol>
