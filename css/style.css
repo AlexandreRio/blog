@@ -238,3 +238,8 @@ td{
 @media (max-width: 600px) {
   article li time { display: none; }
 }
+
+@media (max-height: 800px) {
+  body > article { margin-top: 10px; }
+  aside { padding: 10px; }
+}
