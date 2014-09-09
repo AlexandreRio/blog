@@ -56,7 +56,7 @@ a { color:rgb(33,117,155); text-decoration:none; }
 a:hover { color: rgb(15,54,71);text-decoration: underline; }
 
 aside {
-  width        : 320px;
+  width        : 330px;
   text-align   : left;
   height       : 80%;
   position     : fixed;
@@ -64,6 +64,10 @@ aside {
   left         : 30px;
   padding      : 50px;
   border-right : 2px solid rgb(237, 237, 237);
+}
+
+#aside-list {
+  margin-top: 0px;
 }
 
 #github-item {
