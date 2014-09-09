@@ -1,4 +1,4 @@
-;@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
 html { font-family: 'Noto Serif', serif; }
 
 body {
@@ -66,6 +66,14 @@ aside {
   border-right : 2px solid rgb(237, 237, 237);
 }
 
+#github-item {
+  list-style-image: url(/assets/github.png);
+}
+
+#viadeo-item {
+  list-style-image: url(/assets/viadeo.png);
+}
+
 aside > p {
   margin      : 0;
   color       : rgb(81,81,81);
@@ -100,7 +108,7 @@ aside > p {
   transition         : 200ms;
 }
 
-.dogecoin_link {
+.crypto_link {
   font-size : 12px;
 }
 
