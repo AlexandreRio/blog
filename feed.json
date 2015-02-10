@@ -1,0 +1,14 @@
+---
+layout: none
+---
+[
+{% for post in site.posts limit:20 %}
+{
+  "id": {{forloop.index}},
+  "title": {{post.title | jsonify}},
+  "date" : {{post.date | date_to_string | jsonify}},
+  "url": {{post.url | jsonify}},
+  "content": {{post.content | jsonify}}
+}{% if forloop.rindex0 > 0 %},{% endif %}
+{% endfor %}
+]
