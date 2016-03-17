@@ -1,7 +1,8 @@
 name      : Alexandre Rio
 url       : alexrio.fr
-markdown  : redcarpet
-pygments  : true
+highlighter  : rouge
 include   : ['.htaccess']
 exclude   : ['publish.sh', 'assets', 'publish_assets.lftp', 'publish_posts.lftp']
 permalink : date
+gems:
+  - jekyll-gist
