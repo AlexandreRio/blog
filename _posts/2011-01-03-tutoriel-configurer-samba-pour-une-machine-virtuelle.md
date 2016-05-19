@@ -6,7 +6,7 @@ categories:
 - Tutoriel
 type: post
 ---
-#Introduction:
+# Introduction:
 
 Ayant passé un long ( trop long ?) moment sous windows avant de migrer à linux, j'ai gardé mais petites habitudes avec certains logiciels qui ne tournent que sous windows. Principalement le logiciel Zune, qui me permet de rajouter de la musique sur ce dernier. J'ai très vite utilisé une machine virtuelle pour avoir Zune, mais comment faire pour accéder à mes musiques/vidéos/images depuis cette machine ? Même si le logiciel que j'utilise est censé permettre le partage de dossier, j'ai quand même été obligé d'utiliser ce magnifique logiciel qu'est samba!
 
@@ -18,12 +18,12 @@ Vous aurez besoin de:
 
 En théorie, puisque samba marche sur la plupart des OS on est pas obligé d'être  sous linux mais bon j'ai pas le temps de tester. :P
 
-#Installation:
+# Installation:
 Pour installer Virtualbox il suffit d'installer le paquet `virtualbox-ose`. Donc soit dans un terminal soit via la logithèque ubuntu. Puis d'installer l'os voulut, je répète que j'ai choisit windows xp mais que ça devrait marcher pour n'importe lequel.
 
 Installer ensuite Samba sur votre ordinateur ( pas sur la machine virtuelle). Normalement vous devriez rencontrer aucun soucis à ce niveau là. Sinon il y a des tas de tutoriels qui pourront vous aider.
 
-#Configuration:
+# Configuration:
 
 Alors nous voilà donc avec samba, son fichier de configuration se trouve dans `/etc/samba/smb.conf`
 On exécute donc la commande sudo vim `/etc/samba/smb.conf` et on se retrouve avec quelque chose dans le genre:
@@ -49,13 +49,13 @@ Pour vérifier la syntaxe de votre fichier placer vous dans le dossier /etc/samb
 
 S'il n'y a pas d'erreurs on peut tester le tout dans notre machine virtuelle.
 
-#Test:
+# Test:
 
 Lancez votre machine virtuelle, et si c'est windows exécutez la commande \'votre adresse ip locale' ce qui correspond à \192.168.1.13 pour les gens chez Orange, 192.168.1.7 chez Bouygue.
 Dans la fenêtre qui s'ouvrira vous devriez trouver les dossiers partagés, ici Transfert, My Passport et les imprimantes partagées ( par défaut dans le fichier smb.conf).
 Vous pouvez désormais accéder à des dossiers de votre disque dur en passant par une machine virtuelle.
 
-#Pour aller plus loin:
+# Pour aller plus loin:
 
 Comme dans mon exemple je parlais du logiciel Zune, et que je rédige ce tutoriel pour quelqu'un qui veut s'en servir je vais finir le travail :P
 

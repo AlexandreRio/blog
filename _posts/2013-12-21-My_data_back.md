@@ -16,26 +16,26 @@ L'article de rue89 m'a donc donné la motivation qu'il me fallait pour avoir enc
 
 Voilà ce que j'ai changé :
 
-##Mozilla-sync
+## Mozilla-sync
 
 J'utilise exclusivement pour la navigation et le service Mozilla Sync pour mémoriser et synchroniser mes mots de passe et bookmarks. J'ai donc installé mon propre serveur Sync plutôt que d'utiliser ceux de Mozilla, même si les données sont chiffrées et théoriquement illisibles par une tierce personne sans la clé de récupération.
 
-##Carddav
+## Carddav
 
 La chose qui me gênait le plus était d'utiliser Google pour synchroniser mes contacts entre mon téléphone sous Android et mon laptop, je faisais des exports en csv que j'importais dans Thunderbird.
 
 Conséquence : installation d'un serveur carddav pour tout synchroniser ça.
 Sur Android j'utilise [DAVDroid](http://davdroid.bitfire.at/what-is-davdroid), sur mon laptop j'utilise [pycarddav](https://github.com/geier/pycarddav/), qui s'utilise en CLI donc très pratique pour Mutt ( mais pas que).
 
-##Caldav
+## Caldav
 
 Pour synchroniser ses agendas, il faut juste avoir un Adapter caldav pour que l'application calendrier d'Android puisse se synchroniser sur un serveur CalDAV.
 
-##Cyanogen mod
+## Cyanogen mod
 
-Même si on ne peut pas avoir de téléphone vraiment libre ( voir la [conf de Jérémie Zimmermann](#link1)) retirer les services Google est déjà un mieux. J'ai donc installé Cyanogen mod.
+Même si on ne peut pas avoir de téléphone vraiment libre ( voir la [conf de Jérémie Zimmermann](# link1)) retirer les services Google est déjà un mieux. J'ai donc installé Cyanogen mod.
 
-####Ref
+#### Ref
 <ol>
 <li id=link1>«Jérémie Zimmermann : Nos machines sont-elles encore réellement nos amies?» à Pas Sage en Seine 2013.<a href="http://lacantine.ubicast.eu/videos/21-06-2013-215359/">http://lacantine.ubicast.eu/videos/21-06-2013-215359/</a></li>
 </ol>

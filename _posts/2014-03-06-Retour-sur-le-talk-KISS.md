@@ -11,15 +11,15 @@ compliqué ?» présenté par Frédéric Bouchery et qui tentait de répondre à
 
 Je ne vais pas résumer l'intégralité de sa présentation mais plutôt reprendre certains points abordés et les détailler un peu.
 
-##Complexité
+## Complexité
 Tout projet tend à se complexifier avec le temps, un premier abordé à été de déterminer d'où vient cette complexité
 
-##L'importance de l'expérience dans le choix des outils
+## L'importance de l'expérience dans le choix des outils
 
 Avant de commencer à coder on analyse les besoins, puis on détermine les technologies qui seront à utiliser.
 Là on peut arriver au cas de figure suivant : l'architecte maitrise ou affectionne un langage, disons PHP, alors que son équipe a plus d'expérience par exemple en JEE.
 
-###Avoir une mauvaise expérience sur un framework
+### Avoir une mauvaise expérience sur un framework
 
 On a tous connu des frameworks qui ont l'air super bien «sur le papier», seulement nos besoins sont rarement aussi simples que les quelques cas d'utilisations documentés sur le site, de même le super framework du dernier n'est pas forcément approprié pour ce projet ci, les projets ne sont pas toujours les mêmes.
 Parfois la raison est simplement que le framework était trop jeune la première fois qu'on l'a utilisé et cette mauvaise expérience nous a marqué.
@@ -28,14 +28,14 @@ Tout cela peut être accentué par le [*Syndrome du Not Invented Here*](https://
 
 _Il faut adapter les besoins aux outils et non l'inverse._
 
-##Le problème des développeurs expérimentés
+## Le problème des développeurs expérimentés
 
 À ces problèmes d'architectures viennent s'ajouter des problèmes de développement.
 
 Tout d'abord le manque de développeur expérimenté, qui s'explique du fait que lorsqu'un développeur arrive à un certain niveau d'ancienneté les entreprises préfèrent lui donner plus de responsabilité voire le faire passer chef de projet.
 Il en ressort un manque d'expert d'une technologie donnée.
 
-##Quelques conseils
+## Quelques conseils
 
 Tout d'abord les bonnes pratiques ne sont pas des lois, il ne faut pas hésiter à les enfreindre ou les modifier en fonction du projet et des développeurs.
 
@@ -49,7 +49,7 @@ Un bon moyen de prendre une décision lors du choix d'un outil est la *matrice d
 
 Bien sur les valeurs à associer sont totalement subjectives.
 
-###Pour le code
+### Pour le code
 
 De manière générale, surveiller le code et pas uniquement avec des outils qui feront des statistiques que personne ne regardera.
 
@@ -57,7 +57,7 @@ Concevoir et développer en binôme, idéalement un moins expérimenté avec un 
 
 Former et entraîner ses développeurs autant que possible
 
-##Pour aller plus loin
+## Pour aller plus loin
 
 * [Les slides présentés au forum php 2013](http://forumphp2013-bouchery.rhcloud.com/#/)
 * [L'événement meetup](http://www.meetup.com/DevCamp/events/163730602/)

@@ -6,12 +6,12 @@ categories:
 ---
 <em>Homonymie, cette article ne traite pas des fichiers utilisés par Windows et son System Information.</em>
 
-##Qu'est ce qu'un fichier nfo et pourquoi en utiliser ?
+## Qu'est ce qu'un fichier nfo et pourquoi en utiliser ?
 <p style="text-align: justify;">Les fichiers nfo sont très utiles pour décrire un ou un ensemble de fichiers auxquels ils sont associés. Cela peut aller du simple <span style="text-decoration: underline;">titre + nombre de pages</span> pour un fichier pdf, de la <span style="text-decoration: underline;">liste des codecs</span> et <span style="text-decoration: underline;">bitrates</span> de chaque pistes audio d'un fichier vidéo jusqu'aux crédits d'une <a title="Demoscene sur Wikipedia" href="http://fr.wikipedia.org/wiki/Sc%C3%A8ne_d%C3%A9mo" target="_blank">démo</a>.
 
 Le nfo est donc devenu un standard pour les teams (comprenez les gens à l'origine des fichiers à décrire) qui aiment beaucoup ajouter une touche personnelle à leurs productions. Un «beau» nfo permet de mettre en valeur une team, faire en sorte qu'on se souvienne de leur nom et qu'on s'oriente vers leurs releases ( «productions» ) plutôt que vers celles de teams concurrentes.
 
-##Contenu
+## Contenu
 Pour faire un «beau» fichier nfo il faut avant tout :
 
 * Un logo, plus ou moins gros, reprenant le nom ou l'acronyme de la team,
@@ -20,7 +20,7 @@ Pour faire un «beau» fichier nfo il faut avant tout :
 
 Et tout ça en ASCII-Art. Bien que certains utilisent un simple fichier texte en UTF8 pour encoder les caractères qui composent les «images» c'est du cp437 qu'il faut utiliser.
 
-##Exemples
+## Exemples
 Si vous essayez d'ouvrir un fichier nfo avec un éditeur de texte classique voici ce que vous obtiendrez :
 
 ![Fichier nfo ouvert avec un éditeur de texte ne supportant pas l'encodage cp437.](/assets/2013/01/nfo_error.png)
@@ -35,7 +35,7 @@ Le problème est donc de trouver un éditeur de texte supportant cet encodage, s
 
 On trouve facilement des viewers permettant d'afficher des fichiers nfo et des programmes permettant de récupérer les <a title="Metadonnées" href="http://fr.wikipedia.org/wiki/Metadata">metadatas </a>d'une vidéo et de les présenter dans un fichier texte ( texte et non nfo ) mais rien pour les modifier.
 
-##nfo-modifier
+## nfo-modifier
 
 <figure>
 <img src="/assets/2013/01/interface.png">

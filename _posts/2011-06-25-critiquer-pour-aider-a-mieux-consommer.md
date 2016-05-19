@@ -5,6 +5,7 @@ categories:
 - Internet
 type: post
 ---
+
 À l'heure où l'accès à la culture devient presque un luxe, j'entends le prix des jeux vidéos: 70€ et celui des films: 20-30€, on ne peut plus se permettre de consommer tout et n'importe quoi; mais alors, comment savoir si un film vaut son prix ? Comment trouver d'autres œuvres littéraires susceptibles de nous plaire? Et bien je vous présente le site [senscritique.com](http://www.senscritique.com/). Il est toujours en Bêta mais il possède déjà énormément de fonctionnalités.
 
 ## Rapide tour d'horizon:
@@ -14,7 +15,7 @@ Senscritique recense tous les films et séries, BD et œuvres littéraires (et b
 ![](/assets/2011/06/senscritique_diablo.jpg)
 <em>Une partie de la fiche d'un jeu vidéo.</em>
 
-####Mais c'est un moyen de nous cibler et de nous balancer plein de pub?!
+#### Mais c'est un moyen de nous cibler et de nous balancer plein de pub?!
 
 Et bien vous pouvez chercher la publicité sur le site, vous n'en trouvera pas( peut être du fait de la version Bêta) et de toute manière l"inscription se fait avec un pseudo et non à partir de sa vraie identité et confirmation par sms comme le font certains réseaux sociaux. :D
 
